@@ -10,13 +10,17 @@ Ready with development? Tested well? Then it's time to publish... The official J
 **picture of the jolla store**
 
 But wait: to prevent a disappointment: first check your RPM-file in the SailfishOS SDK -  Harbour Tools – RPM validator (also available in browser: An [http://127.0.0.1:8080/C/harbour_tools/]("correct link")
-. The file is checked for a couple of simple things and some difficult ones. A simple thing is the correctness of  the icon (86 x 86 pixels and file type: .png) or the naming convention (harbour-yourappname). A difficult one is the correctness of the imported libraries (harbour.yourappname.libraryname), using the wrong dependencies or the use of libraries that are not (yet) allowed in harbour (e.g. QtLocation).  It is also possible you get one or more warnings (e.g. defining all your files as executable will give you warnings). For now, this will not lead to failure but in the future it will. 
+. The file is checked for a couple of simple things and some difficult ones. A simple thing is the correctness of the icon (86 x 86 pixels and file type: .png) or the naming convention (harbour-yourappname). A difficult one is the correctness of the imported libraries (harbour.yourappname.libraryname), using the wrong dependencies or the use of libraries that are not (yet) allowed in harbour (e.g. QtLocation).  It is also possible you get one or more warnings (e.g. defining all your files as executable will give you warnings). For now, this will not lead to failure but in the future it will. 
 
 **picture of succesfull harbour tools check**
 
 When the process is finished, a nice overview is given with passed checks and (hopefully none) failed checks. If you have failures, they are presented with a link to the official harbour frequently asked questions ([https://harbour.jolla.com/faq]("https://harbour.jolla.com/faq")). 
 
 **picture of harbour tools check failure check with accompaning link to harbour faq.**
+
+The next step is to install your app to your jolla. This will prove the correct installation of your app on an actual device. 
+** add story that jolla qa uses newly flashed jolla phones to install submitted apps. This proves the correct installation with all its libraries. When the app installed correct on your jolla, still does not prove that the app installs correctly. 
+you can prevent this using ---- on your phone or ----- on your emulator
 
 After registration to harbour, you can add your app to harbour.
 
