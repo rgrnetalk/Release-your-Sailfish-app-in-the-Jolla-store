@@ -1,0 +1,66 @@
+# Release-your-Sailfish-app-in-the-Jolla-store
+Release-your-Sailfish-app-in-the-Jolla-store
+
+The Jolla store
+
+(This blog aims on helping you to get your Jolla app approved as soon as possible and to avoid stepping into the same traps as I did.)
+
+Ready with development? Tested well? Then it's time to publish... The official Jolla store offers you the possibility to bring your app to the Sailfish world. 
+
+**picture of the jolla store**
+
+But wait: to prevent a disappointment: first check your RPM-file in the SailfishOS SDK -  Harbour Tools – RPM validator (also available in browser: An [http://127.0.0.1:8080/C/harbour_tools/]("correct link")
+. The file is checked for a couple of simple things and some difficult ones. A simple thing is the correctness of the icon (86 x 86 pixels and file type: .png) or the naming convention (harbour-yourappname). A difficult one is the correctness of the imported libraries (harbour.yourappname.libraryname), using the wrong dependencies or the use of libraries that are not (yet) allowed in harbour (e.g. QtLocation).  It is also possible you get one or more warnings (e.g. defining all your files as executable will give you warnings). For now, this will not lead to failure but in the future it will. 
+
+**picture of succesfull harbour tools check**
+
+When the process is finished, a nice overview is given with passed checks and (hopefully none) failed checks. If you have failures, they are presented with a link to the official harbour frequently asked questions ([https://harbour.jolla.com/faq]("https://harbour.jolla.com/faq")). 
+
+**picture of harbour tools check failure check with accompaning link to harbour faq.**
+
+The next step is to install your app to your jolla. This will prove the correct installation of your app on an actual device. 
+** add story that jolla qa uses newly flashed jolla phones to install submitted apps. This proves the correct installation with all its libraries. When the app installed correct on your jolla, still does not prove that the app installs correctly. 
+you can prevent this using ---- on your phone or ----- on your emulator
+
+After registration to harbour, you can add your app to harbour.
+
+Fill in the fields: 
+
+*   title, the app name 
+
+Per language: 
+
+*   description of the app, the functionality offered by the app
+*   summary, a short description of the functionality of the app. On the app detail page, the summary and the description are shown under each other
+*   recent changes, present the improvements for the new version versus the older one (are you really informed when change information says there were "mainly bugfixes"?)
+
+Categorization: 
+
+*   categorization, a list box field for categorizing your app  
+Binary: 
+*   upload the binary (RPM file)
+*   OS version limits, the app can be used from SailfishOS version until version 
+
+Visul assets: 
+
+*    Icon 
+*    Screenshots (up to three) 
+*    There is one special thing to upload: the picture that is shown on the general app overview page and the detail page of the app. Requirements for the picture are a format of 524 x .. pixels and a .png file extension.
+
+**picture of jolla store header**
+
+Contact details
+*    Mostly not required fields
+
+You have the opportunity to choose the date on which the app will be published or to publish it immediately (after harbour QA has approved your app, that is). And finally you can send a message to Harbour QA if you want. 
+
+If you are ready, you can submit the app and you will receive an immediatiate notification in your harbour mailbox. Harbour QA will check your app for all the checks the harbour tool has already done. But be aware: passing the Harbour Tools RPM validator does not mean the app will pass Harbour QA. For example you might have used wrong version numbering. <<describe version numbering>>
+
+Harbour QA will react within a couple of days (the reaction time given in the store backend is more indicative then realistic ;-) with a disappointing "unfortunately your application didn´t pass Jolla Store QA test" or a joyfull "congratulations, your app has been approved by QA" which means your app can conquer the sailfish world! 
+
+What information is offered in the store back-end? For every app and all your apps together you can see the total number of downloads and the number of installations still active, the number of likes and reviews. To read the reviews you have to go to the store front-end, which is logical: that's the place to react upon these reviews. 
+
+Developing for sailfish means developing for the community, for free and for glory (although some developers are open for donations, from my personal experience: that will not result in a serious cash flow). But jolla has indicated (laten doorschemeren) payed apps will soon be possible. With Sailfish 2.0 in the pipeline and the new tablet upcoming, now is the time to release your first jolla app, happy sailing! 
+
+*Rgrnetalk is a satisfied Jolla user and hobby developer of harbour-hud (head-up-display app), harbour-reisplanner en harbour-reisplannerbe (journey planner app for planning railway travels in the Netherlands and Belgium), harbour-vertices (only available via OpenRepos) and designer of the 3d printable Jolla horn (a horn to increase Jolla loudspeaker sound, publicly available on tinkercad (https://tinkercad.com/things/jA9TNtFMdm7). He is currently working on new versions of his apps, a solar TOH and some ideas about other OHs*.
+
